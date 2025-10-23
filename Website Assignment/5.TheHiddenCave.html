@@ -1,0 +1,128 @@
+<html>
+
+<head>
+
+  <title>The Hidden Cave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    .CaveWithTreasureImg{
+        width:400px;
+      }
+
+      body {
+  font-family:'Trebuchet MS', sans-serif;
+  background:linear-gradient(to bottom right, #61B0B0, #D9A371);
+  color:#4D2F2C;
+  text-align:center;
+  padding:30px;
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  border: 5px solid #4D2F2C;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  padding: 30px;
+}
+
+h1 {
+  font-family: 'Pirata One', cursive;
+  font-size:2.5em;
+  color:#4D2F2C;
+  text-shadow:2px 2px 5px #000;
+}
+
+p {
+  font-size:1.2em;
+  max-width:700px;
+  margin:0 auto 25px;
+  line-height:1.6em;
+}
+
+p, a {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  border-radius:15px;
+  box-shadow:0 0 20px rgba(255, 255, 255, 0.4);
+  margin:20px 0;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img:hover {
+  transform:scale(1.05);
+  box-shadow:0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+a {
+  display:inline-block;
+  background:#4D2F2C;
+  color:#EBD0B2;
+  text-decoration:none;
+  padding:10px 20px;
+  margin:10px;
+  border-radius:8px;
+  font-weight:bold;
+  transition:background 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+a:hover {
+  background:#4D2F2C;
+  transform:scale(1.1);
+}
+a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+}
+a:hover::after {
+  left: 100%;
+}
+
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(20px); }
+  to { opacity:1; transform: translateY(0); }
+}
+
+body, h1, p, img, a {
+  animation:fadeIn 1.5s ease;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+  <h1>The Hidden Cave</h1>
+
+  <p>
+
+    Inside the cave, you find glowing crystals and an ancient chest. 
+    Do you open it or search deeper?
+
+  </p>
+
+  <img class="CaveWithTreasureImg" src="IMAGES/5.CaveWithTreasure.jpg"><br>
+
+  <a href="6.TheTreasure.html">Open the chest 💎</a><br>
+
+  <a href="2.TheForestPath.html">Return to the forest 🌲</a><br>
+
+  <a href="1.TheLostTreasureOfMoonLightIsland.html"> Back to Home 🏠</a>
+
+</body>
+
+</html>
